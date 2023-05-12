@@ -1,0 +1,148 @@
+
+:root {
+--scale_factor: 1;
+
+--pink:       #c778b8;
+--red:        #c73a3a;
+--dark_red:   #7b3e3c;
+--darker_red: #442726;
+
+--green:      #42a67a;
+--dark_green: #2b785b;
+
+--light_cyan: #85b3bd;
+--cyan:       #5c7e90;
+--dark_cyan:  #3b5460;
+--blue:       #312376;
+--dark_blue:  #1c1d3f;
+
+--white:      #b1b1b1;
+--light_gray: #737373;
+--gray:       #404040;
+--black:      #090909;
+
+}
+
+
+
+body {
+    font-family: "Lucida Console", Monaco, monospace;
+    image-rendering: pixelated;
+    font-size: calc(9px* var(--scale_factor));
+	background-repeat: no-repeat;
+    background-color: var(--black);
+    background-size: cover;
+    margin: 0;
+    /* transition:all 1s; */
+    padding: 0;
+    overflow: hidden;
+
+    /* no selection */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+#main_screen {
+    overflow: hidden;
+    transition:all 0.2s;
+    width: calc(640px * var(--scale_factor));
+    height: calc(360px * var(--scale_factor));
+    background-size: cover;
+    background-color: var(--black);
+    background-image: url("screens/bios.png");;
+    margin: auto;
+    /* width: 640px; */
+    /* height: 360px; */
+}
+
+#msg {
+    width: calc(270px * var(--scale_factor));
+    height: calc(82px * var(--scale_factor));
+    color: var(--black);
+    background-color: var(--light_gray);
+    background-size: cover;
+    cursor: pointer;
+    overflow-y: hidden;
+	overflow-x: hidden;
+    top: 190px;
+    margin-left: calc(313px * var(--scale_factor));
+    margin-top: calc(199px * var(--scale_factor));
+    margin-bottom: calc(80px * var(--scale_factor));
+    margin-right: calc(60px * var(--scale_factor));
+    position: absolute;
+
+}
+
+
+
+
+#calibration_text {
+    overflow: hidden;
+    position: absolute;
+    margin-top: calc(30px* var(--scale_factor));
+    margin-left: calc(70px* var(--scale_factor));
+    color: var(--white);
+
+}
+
+#bios_ascii {
+    line-height: calc(7px* var(--scale_factor));
+}
+
+/* whole calibrating screen size: */
+/* 534 x 310*/
+/* 25 top 25 bottom 52 left 52 right*/
+
+#calibrationTable {
+    overflow: hidden;
+    color: var(--light_gray);
+    position: absolute;
+    margin-top: calc(130px* var(--scale_factor));
+    margin-left: calc(265px* var(--scale_factor));
+}
+
+#cTableHeader{
+    overflow: hidden;
+    color: var(--light_gray);
+    font-weight: normal;
+}
+
+#notepad {
+    transition: none;
+    position: absolute;
+    color: var(--white);
+    width: calc(596px* var(--scale_factor));
+    height: calc(260px* var(--scale_factor));
+    margin-top: calc(48px* var(--scale_factor));
+    margin-bottom: calc(50px* var(--scale_factor));
+    margin-left: calc(12px* var(--scale_factor));
+    margin-right: calc(32px* var(--scale_factor));
+    /* animation: type 4s steps(60, end); */
+}
+
+#word_counter {
+    font-weight: bold;
+    position: absolute;
+    color: var(--gray);
+    width: calc(615px* var(--scale_factor));
+    height: calc(12px* var(--scale_factor));
+    margin-top: calc(321.5px* var(--scale_factor));
+    margin-bottom: calc(27.5px* var(--scale_factor));
+    margin-left: calc(23px* var(--scale_factor));
+    margin-right: calc(4px* var(--scale_factor));
+}
+
+#captcha_or_welcome {
+    position: absolute;
+    color: var(--black);
+    width: calc(190px* var(--scale_factor));
+    height: calc(82px* var(--scale_factor));
+    margin-top: calc(216px* var(--scale_factor));
+    margin-bottom: calc(62px* var(--scale_factor));
+    margin-left: calc(319px* var(--scale_factor));
+    margin-right: calc(137px* var(--scale_factor));
+}
+/* @keyframes type{from { width: 0; }} */
